@@ -19,6 +19,5 @@ authRouter.get('/protected', authMiddleware, (req, res) => {
   res.json({ message: 'You have access to this route!' });
 });
 
-authRouter.get('/get-events', EventController.refreshToken);
 
 export default authRouter;
